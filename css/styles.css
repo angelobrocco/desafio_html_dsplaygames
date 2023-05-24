@@ -1,0 +1,340 @@
+:root {
+    --color-green: #38AF90;
+    --color-white: #FFFFFF;
+    --color-gray: #797979;
+    --color-light-gray: #F0F0F0;
+    --color-header-border: #000000;
+    --color-pink: #DD7E92;
+    --color-dark-gray: #383838;
+    --color-light-gray-1: #C4C4C4;
+    --radius: 8px;
+    --footer-h: 302px;
+    --footer-h-1: 190px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    height: 90px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 3px var(--color-header-border);
+}
+
+header img {
+    width: 62px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--color-gray);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-pink);
+}
+
+h5 {
+    font-size: 36px;
+    color: var(--color-green);
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--color-dark-gray);
+    height: var(--footer-h);
+    color: var(--color-white);
+    font-size: 10px;
+}
+
+#menu-items {
+    visibility: hidden;
+    position: fixed;
+    font-size: 14px;
+}
+
+#nav-title {
+    font-size: 18px;
+}
+
+#right-nav-items img,
+li {
+    margin: 15px;
+}
+
+#news h1 {
+    color: var(--color-gray);
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+#news h2 {
+    color: var(--color-green);
+    font-size: 16px;
+}
+
+#news h3 {
+    font-size: 12px;
+    border-bottom: 3px solid var(--color-green);
+}
+
+#btn-more {
+    width: 100%;
+    max-width: 244px;
+    height: 67px;
+    margin: 0px auto 40px auto;
+    border-width: 0px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border-radius: var(--radius);
+    display: flow-root;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#games {
+    background-color: var(--color-light-gray);
+}
+
+#games h1 {
+    color: var(--color-green);
+    padding-top: 40px;
+    padding-bottom: 28px;
+}
+
+#games img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#sign-up {
+    padding: 0px 10px;
+}
+
+#sign-up h1 {
+    color: var(--color-gray);
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+
+#sign-up>div {
+    background-color: var(--color-light-gray);
+    width: 100%;
+    max-width: 790px;
+    margin: 0px auto 40px auto;
+    padding: 15px 12px;
+    border-radius: var(--radius);
+    box-shadow: 0px 5px 10px var(--color-gray);
+}
+
+#frm-subscribe button {
+    max-width: 244px;
+    width: 100%;
+    height: 67px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid var(--color-pink);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#frm-subscribe input::placeholder {
+    color: var(--color-light-gray-1);
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.card-news {
+    background-color: var(--color-light-gray);
+    margin: 0px 10px 30px 10px;
+    padding: 15px 12px;
+    border-radius: var(--radius);
+    box-shadow: 0px 5px 10px var(--color-gray);
+}
+
+.news-date {
+    color: var(--color-green);
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.news-desc {
+    color: var(--color-gray);
+    font-size: 10px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+
+.card-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-game {
+    background-color: var(--color-white);
+    border-radius: var(--radius);
+    width: 300px;
+    height: 326px;
+    margin: 0px 10px 30px 10px;
+    box-shadow: 0px 5px 10px var(--color-gray);
+    text-align: center;
+}
+
+.card-game img {
+    border-radius: var(--radius) var(--radius) 0px 0px;
+}
+
+.card-game h2 {
+    font-size: 18px;
+    color: var(--color-gray);
+    margin-top: 25px;
+}
+
+.card-game h3 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.card-game h5 {
+    margin-top: 13px;
+}
+
+.card-game span {
+    color: var(--color-green);
+    font-weight: 700;
+}
+
+.txtbox {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-gray);
+}
+
+.get-news {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.frm-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frm-buttons #btn-send {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.frm-buttons #btn-reset {
+    background-color: var(--color-white);
+    color: var(--color-pink);
+}
+
+.footer-items {
+    height: var(--footer-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.extreme-items {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 36px;
+    }
+    footer {
+        height: var(--footer-h-1);
+    }
+    #nav-title {
+        font-size: 24px;
+    }
+    #menu-items {
+        visibility: visible;
+        position: relative;
+    }
+    #news h2 {
+        font-size: 24px;
+    }
+    #news h3 {
+        font-size: 16px;
+    }
+    #games h1 {
+        color: var(--color-green);
+        padding-top: 36px;
+        padding-bottom: 73px;
+    }
+    #sign-up>div {
+        padding: 50px 70px;
+    }
+    #frm-subscribe button {
+        margin-bottom: 0px;
+    }
+    .frm-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer-items {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: var(--footer-h-1);
+    }
+}
